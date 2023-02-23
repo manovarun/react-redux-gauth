@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { GoogleLogin, googleLogout, useGoogleLogin } from '@react-oauth/google';
+import React, { useEffect } from 'react';
+import { GoogleLogin } from '@react-oauth/google';
 import { FcGoogle } from 'react-icons/fc';
 import shareVideo from '../assets/share.mp4';
 import logo from '../assets/logowhite.png';
@@ -60,9 +60,6 @@ const GoogleAuth = () => {
               onFailure={errorGoogle}
               cookiePolicy='single_host_origin'
             />
-            {/* <Button variant='danger' onClick={logOut}>
-              Logout
-            </Button> */}
           </div>
         </div>
       </div>
