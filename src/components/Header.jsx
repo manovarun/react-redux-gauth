@@ -24,8 +24,14 @@ const Header = () => {
   }, [navigate, user]);
 
   return (
-    <Navbar bg='primary' variant='dark' expand='lg' fixed='top'>
-      <Container>
+    <Navbar
+      bg='primary'
+      variant='dark'
+      expand='md'
+      fixed='top'
+      collapseOnSelect
+    >
+      <Container fluid>
         <LinkContainer to='/'>
           <Navbar.Brand>React App</Navbar.Brand>
         </LinkContainer>
@@ -40,7 +46,7 @@ const Header = () => {
                 <Nav.Link className='nav-item'>About</Nav.Link>
               </LinkContainer>
               <span
-                className='text-secondary'
+                className='text-secondary d-none d-md-block'
                 style={{ position: 'relative', top: '8px' }}
               >
                 |
